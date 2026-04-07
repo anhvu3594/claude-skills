@@ -1,0 +1,23 @@
+{
+  "skill_name": "resume-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just graduated from UT Austin with a BS in Computer Science (GPA 3.7). I did one internship at a Series B startup called DataPipe where I worked on their data ingestion pipeline using Python and Kafka for 3 months. I also built a real-time chat app as my senior capstone using React, Node.js, and WebSockets that had about 200 active users on campus. I know Python, Java, JavaScript, React, Node.js, PostgreSQL, and some Docker. I want to apply for Google's L3 New Grad Software Engineer position. Can you write my resume?",
+      "expected_output": "A one-page resume in markdown format with: contact section, technical skills (Python, Java, JavaScript prominent), internship experience with RIC framework bullets including numbers, capstone project with metrics (200 users), education with GPA and graduation date, no photo/personal info, no self-ratings, tailored for Google generalist role",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm a backend engineer with 5 years experience. Currently at a mid-size fintech company called PayFlow. Before that I was at a consulting firm for 2 years. I work with Java, Spring Boot, PostgreSQL, AWS, and Kubernetes daily. I've built microservices handling payment processing for 50k daily transactions, reduced API latency by 35%, and led a migration from monolith to microservices. But my current resume just lists responsibilities like 'Responsible for backend services' and 'Worked on payment systems'. I'm not getting callbacks. Help me rewrite it to actually land interviews at companies like Stripe or Square.",
+      "expected_output": "A rewritten resume that transforms generic responsibility bullets into RIC framework bullets with specific numbers (50k daily transactions, 35% latency reduction, microservices migration details), tailored for fintech companies, with technologies woven into experience bullets, proper formatting, and strong active verbs",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have 12 years of experience as a software engineer. Currently Staff Engineer at Shopify for the last 4 years, before that Senior at Amazon for 3 years, and before that various mid-level roles. I specialize in distributed systems, API platform design, and developer tools. I've influenced platform architecture across 5 teams at Shopify, mentored 8 engineers (3 promoted to senior), and led the design of an API gateway handling 2M requests per second. I'm applying for a Staff Engineer role at Stripe. The job description emphasizes: building reliable, scalable payment infrastructure; cross-team technical leadership; API design; and experience with distributed systems at scale. Help me tailor my resume.",
+      "expected_output": "A 2-page resume with: tailored summary mentioning distributed systems and API platform expertise, technical skills section matching Stripe's stack, Shopify experience with detailed RIC bullets emphasizing cross-team influence and scale (2M RPS, 5 teams influenced, 8 mentees), Amazon experience with moderate detail, earlier roles compressed, education on page 2 minimal, language mirroring Stripe's job description (payment infrastructure, reliability, scalability)",
+      "files": []
+    }
+  ]
+}
