@@ -1,0 +1,88 @@
+INTERVIEW TRANSCRIPT — Discovery Session
+Project: Restaurant Inventory Management
+Date: March 2026
+Participants: Maria Chen (COO, FreshBite Restaurant Group), Tom Park (Head Chef / Culinary Director), Lisa Wang (Interviewer/Consultant)
+
+---
+
+LISA: Maria, thanks for taking the time. Can you start by telling me about FreshBite and what you're dealing with right now?
+
+MARIA: Sure. So FreshBite is a chain — we have 23 locations across the Pacific Northwest. We've been growing fast, opened 8 new locations in the last 18 months. And honestly, the growth has exposed how broken our inventory system is. We're still basically running on spreadsheets and gut feeling.
+
+LISA: What does that look like day to day?
+
+MARIA: Each location manager orders independently. They have a rough par sheet — you know, like "we should have 50 pounds of chicken on hand" — but it's based on historical averages that nobody updates. So what happens is, on a busy Friday, three locations run out of salmon. On a slow Tuesday, another location throws away $400 worth of produce that went bad. It's constant.
+
+LISA: Tom, from the kitchen side, how does this hit you?
+
+TOM: It's a nightmare, honestly. I design the seasonal menus for all locations. I'll create a new dish that requires, say, fresh burrata. And then I find out two weeks later that half the locations never even ordered it because they didn't update their order lists. Or worse, they ordered it but way too much, and it spoiled because they don't have the volume to move it.
+
+When I do a new menu rollout, I literally have to call each location individually and walk them through what to order. For 23 locations. It takes me two full days just on the phone.
+
+MARIA: And that's Tom's time being wasted on logistics instead of menu development, which is what we actually need him doing.
+
+LISA: What have you tried to fix this?
+
+MARIA: We looked at the big restaurant management platforms — Toast, MarketMan, BlueCart. They're fine for single locations or small chains, but they don't really handle what we need. The problem isn't just ordering — it's the intelligence layer. Like, if it's going to rain all week in Portland, our three Portland locations will see a 15% bump in traffic because people want comfort food. None of these systems know that. Our experienced managers know it intuitively, but the new ones don't.
+
+TOM: We also tried building something internally about a year ago. Had a developer build a basic ordering tool. It works for placing orders, but it's basically a digital par sheet. No intelligence. No connection to weather, local events, our POS data, nothing. It just sits there and you type numbers into it.
+
+LISA: Maria, if you could wave a magic wand, what would this system do?
+
+MARIA: Okay so — imagine it's Sunday night. The system already knows what every location sold this week. It knows there's a Trailblazers game on Wednesday that historically drives a 20% spike at our three downtown locations. It knows the weather forecast. It knows Tom just launched a new seasonal menu that features short rib, and short rib has a 3-day lead time from our supplier.
+
+It takes all of that and generates a suggested order for every location, customized. The location manager opens their phone Monday morning, sees the order, tweaks maybe one or two things, and hits send. Done in 5 minutes instead of an hour.
+
+TOM: And for me — when I'm designing a new menu, I want to know: if I add this dish, what does that do to ordering complexity? Which locations can handle the volume? Which suppliers can actually deliver the ingredients I need to all 23 locations? Right now I just... guess. And hope.
+
+LISA: What about food waste? You mentioned produce going bad.
+
+MARIA: It's our number two cost problem after labor. We're throwing away — and this is embarrassing — roughly $8,000 to $12,000 per location per month in food waste. That's over $200K a month across the chain. Some of it is unavoidable, but I'd bet at least 40% is from over-ordering or poor rotation.
+
+The dream is the system tracks what's in each walk-in, knows the shelf life, and flags when something needs to be used. Like "Location 7 has 30 pounds of salmon expiring tomorrow — suggest featuring it as a special." Push that to the chef and the front-of-house team. Turn waste into revenue.
+
+TOM: That would be incredible. Right now we do "use it or lose it" meetings every morning where the sous chef walks the cooler. It's analog. It depends entirely on how good that individual sous chef is. Some locations are great at it, some are terrible.
+
+LISA: Tom, you mentioned menu rollouts being painful. Walk me through what happens when you launch a new seasonal menu.
+
+TOM: Okay so, typically I finalize the menu about 3 weeks before launch. I create recipe cards, prep guides, plating photos — the whole package. Then I have to figure out ordering: what new ingredients are needed, which suppliers carry them, what the lead times are, what quantities each location needs based on their volume.
+
+I literally have a spreadsheet where I try to estimate this. It's got 23 tabs, one per location. I look at their sales data from last year's similar menu, adjust for growth, and come up with order quantities. This process alone takes me about a week. And I still get it wrong regularly — some locations over-order, some under-order, and then we're scrambling.
+
+What I want is: I input the new menu with recipes and portion sizes. The system knows each location's sales patterns. It automatically generates the initial ordering quantities, identifies which suppliers we need to set up, flags any ingredients that have supply chain risks, and creates the rollout plan. I review it, adjust, done.
+
+LISA: Maria, let's talk about the business case. What does fixing this mean financially?
+
+MARIA: If we can reduce food waste by even 30%, that's $60K to $70K per month in savings. If we can improve menu rollout efficiency so Tom isn't spending a week on spreadsheets, that's probably one additional menu cycle per year, which historically drives a 5-8% revenue bump from novelty.
+
+The big one though is stockouts. Every time a location runs out of a key item — especially a promoted item — we estimate it costs us about $500 to $1,000 in lost sales and customer dissatisfaction that day. We're tracking about 40-50 stockout incidents per month across the chain. That's $20K to $50K in monthly impact.
+
+Total, I think we're looking at $100K to $150K per month in combined savings and recovered revenue. For a 23-location chain doing about $45M annually, that's material.
+
+LISA: Who would actually use this system day to day?
+
+MARIA: Three groups. Location managers — they're the ones placing orders and managing their specific inventory. Tom and his culinary team — they need the menu planning and rollout tools. And then me and our ops team — we need the analytics dashboard to see waste trends, cost trends, and stockout patterns across the whole chain.
+
+TOM: The location managers are the critical ones. If they don't adopt it, nothing works. And honestly, a lot of them are not super tech-savvy. They're restaurant people. The system has to be dead simple for them — like, phone-friendly, minimal clicks, just "here's your suggested order, approve or adjust."
+
+MARIA: Tom's right. We rolled out a new POS system last year and the adoption was rough. Took 3 months to get everyone comfortable. So whatever we build has to be simpler than that.
+
+LISA: Any concerns or risks you want to flag?
+
+MARIA: Data accuracy is my big one. If the system is making smart suggestions but it's based on bad POS data or wrong inventory counts, it'll lose trust immediately. The managers will just ignore it and go back to gut feeling. So the data pipeline has to be rock solid from day one.
+
+TOM: Supplier integration is my concern. We use about 12 different suppliers across the chain. Some of them are tech-forward and have APIs. Some of them are literally a guy named Dave who you call on the phone and he shows up with a truck. The system needs to handle both ends of that spectrum.
+
+MARIA: And honestly, the AI recommendation piece — I want it, but I'm also nervous. If it suggests ordering 200 pounds of something for a location and that turns out to be wildly wrong, that's real money. There needs to be guard rails. Like, if a suggestion is more than 20% above or below the historical norm, flag it visually so the manager knows to double-check.
+
+LISA: Timeline-wise, what are you thinking?
+
+MARIA: We'd love to have something running in at least 5 locations by September. If that goes well, roll out to all 23 by year end. We're budgeting around $150K to $200K for the initial build and first year of operation.
+
+TOM: I'd add that we have our fall menu launch in October. If the menu planning piece could be ready for that, it would be an ideal test case. I'm already dreading doing it the spreadsheet way again.
+
+LISA: Last question — is there anything else that keeps you up at night about this?
+
+MARIA: Honestly, I just don't want to build another tool that sits unused. We've been burned before. Whatever we build needs to prove its value in the first week of use, or the managers will tune it out. Start with the thing that saves them the most time — the smart ordering — and earn trust from there.
+
+TOM: Agreed. Don't try to boil the ocean. Get the ordering right, then layer on the fancy stuff.

@@ -1,0 +1,72 @@
+INTERVIEW TRANSCRIPT — Discovery Session
+Project: Fleet Route Optimization Platform
+Date: March 2026
+Participants: Derek Hoffman (VP Operations, SwiftHaul Logistics), Priya Nair (Dispatch Manager), Carlos Mendez (Senior Driver / Driver Trainer)
+
+---
+
+INTERVIEWER: Derek, give me the overview of SwiftHaul and what's driving this project.
+
+DEREK: SwiftHaul is a mid-market logistics company — we do last-mile and regional delivery across the Midwest. We operate about 180 trucks, 220 drivers, service about 3,000 delivery points on any given day. Revenue is around $85 million a year.
+
+The reason we're here is fuel costs and driver retention. Those are my two fires. Fuel is 30% of our operating cost — about $25 million a year. Even a 5% reduction in fuel spend is $1.25 million straight to the bottom line. And driver turnover is killing us — we're at about 40% annual turnover, which is actually below the industry average of 60-90%, but every driver we lose costs us roughly $10K to $15K in recruiting, training, and lost productivity.
+
+The common thread is routing. Our routes are inefficient, and inefficient routes mean more fuel, more hours, more driver frustration.
+
+INTERVIEWER: How are routes planned today?
+
+PRIYA: I manage a team of 4 dispatchers. Every evening, we plan the next day's routes. We use a tool called RouteStar — it's been around forever, does basic optimization. You dump in the delivery addresses, set some constraints like truck capacity and time windows, and it spits out routes.
+
+The problem is, RouteStar treats every day like it's planning in a vacuum. It doesn't learn. Monday's route to the north side of Chicago might go terribly because of construction on I-94 — adds 45 minutes. Tuesday, RouteStar suggests the exact same route through I-94. Because it doesn't know. My dispatchers know, and they manually adjust, but that's 4 people spending 2 hours every evening manually overriding a system that's supposed to be optimizing for them.
+
+DEREK: And that's just the static routing. Once the trucks are out, the real chaos starts. A customer calls and says "I need a delivery moved to 2 PM instead of 10 AM." Another customer cancels. A new urgent order comes in. A truck breaks down. Right now, Priya's team handles all of that by phone and radio. There's no dynamic re-routing. They're doing it in their heads.
+
+PRIYA: On a bad day, I'll have 30 to 40 route changes after the trucks have already left the depot. Each one is a phone call to the driver, a mental recalculation, and a prayer that I didn't accidentally make someone else late. I've been doing this for 12 years so I'm good at it, but my newer dispatchers? They make mistakes. And every mistake is either a late delivery or a wasted trip.
+
+INTERVIEWER: Carlos, from the driver's seat, what's your experience?
+
+CARLOS: I've been driving for SwiftHaul for 7 years, and I also train new drivers. The biggest complaint I hear — and I feel it myself — is unpredictability. I start my day with a route that says 14 stops, estimated finish at 4 PM. By noon, half of it has changed. Stops added, stops moved, sequence reshuffled because dispatch called and said "go here first now."
+
+I get it, things change. But when you're sitting in the truck trying to figure out your new route on a crappy little GPS screen while dispatch is reading you an address over the phone, it's stressful. And stressful means drivers quit.
+
+The good drivers — the ones who've been here a while — they know the routes. They know that on Thursdays the warehouse on Elm Street doesn't open until 10, even though the system says 8. They know that the loading dock at the medical center can only fit one truck at a time, so if you arrive at the same time as another company, you're waiting 30 minutes. That knowledge is all in our heads. When a good driver leaves, that knowledge walks out the door.
+
+INTERVIEWER: What would the ideal system look like?
+
+DEREK: Three things. First, route planning that actually learns. It should know that I-94 northbound is a mess every weekday between 7 and 9 AM. It should know that the Elm Street warehouse doesn't open until 10 on Thursdays. It should know that our 26-foot trucks can't make the turn on Harbor Drive. All of that institutional knowledge, encoded into the system so it plans around it automatically.
+
+Second, dynamic re-routing. When a change happens mid-day — new order, cancellation, breakdown — the system recalculates in real time and pushes the updated route to the driver's phone. Not a phone call from dispatch. An automatic update with the new sequence, new ETAs, and a clear reason why it changed. The driver taps "accept" and follows the updated route.
+
+Third, visibility. I want to see all 180 trucks on a map in real time. I want to know who's ahead of schedule, who's behind, where the bottlenecks are. Right now I find out about problems after they've already caused a late delivery. I want to see them forming and intervene before they hit the customer.
+
+PRIYA: And for me — I want the system to handle the routine changes automatically. If a customer moves a time window, and it's a simple re-sequence, the system should just do it and notify the driver. I only want to get involved for complex situations — multi-truck impacts, urgent inserts, that kind of thing. Right now I'm handling everything, and 70% of it is routine stuff the system should handle.
+
+CARLOS: From the driver side — just give me a phone app with my route, my stops, my ETAs, and update it in real time. Let me mark "delivered," "not home," "access issue" with one tap. And let me add notes that the system remembers — "this customer has a dog, use side entrance" — so the next driver who gets this stop knows what I know.
+
+INTERVIEWER: What about the data side, Derek?
+
+DEREK: We're sitting on years of delivery data and we're doing nothing with it. I want to know: what's our on-time delivery rate by region, by day of week, by customer type? Which routes consistently run over time? What's our cost-per-delivery and how does it vary? Where are we sending trucks half-empty because we could have consolidated?
+
+Our sales team is out there quoting delivery contracts and they're basically guessing on cost. If we had real cost-per-delivery data by zone, they could price accurately. I think we're under-pricing some routes and over-pricing others, but I can't prove it without the data.
+
+INTERVIEWER: What are the risks that worry you?
+
+DEREK: Driver adoption. Same as any tech change with field workers. If the app is slow, crashes, or makes their day harder, they'll revolt. We had a dashcam rollout two years ago that nearly caused a mutiny because drivers felt surveilled. This has to feel like a tool that helps them, not a tracker that monitors them.
+
+PRIYA: System reliability is mine. If the routing system goes down at 5 AM when we're planning the day, and 180 trucks need to leave the depot by 7, that's a crisis. We need a fallback. The current system — RouteStar — is terrible but it's reliable. We can't replace reliable-and-bad with smart-and-fragile.
+
+CARLOS: Battery and data. My phone needs to last a full 10-hour shift running this app. And some of our delivery areas have spotty cell coverage — rural routes, warehouse districts, underground loading docks. The app needs to work offline and sync when it can.
+
+INTERVIEWER: Budget and timeline?
+
+DEREK: We're looking at this as a phased investment. Phase 1 — smart static routing that learns from historical data — I want that in 3 to 4 months. Budget for the full platform is $200K to $300K over the first year. Phase 2 — dynamic re-routing and the driver app — another 3 months after that. Phase 3 — the analytics and visibility dashboard — end of year.
+
+If Phase 1 shows me even a 3% fuel reduction, that's $750K annualized savings. The ROI case is obvious.
+
+PRIYA: I'd add that we're coming up on our peak season — October through December. Whatever we build, I need it stable and trusted by September so we can go into peak with confidence. Nobody wants to be debugging a routing system during the busiest quarter.
+
+INTERVIEWER: Anything else?
+
+CARLOS: Yeah — involve the drivers early. Don't build this in a room and then hand it to us. Put a prototype in front of 5 or 6 experienced drivers, let us poke at it, tell you what's wrong. We know things the engineers don't. That's how you get buy-in too — if drivers feel like they helped build it, they'll champion it.
+
+DEREK: Smart. And one more thing — we have contracts with 3 major customers that include SLA penalties for late deliveries. Last year we paid $180K in penalties. If this system can get our on-time rate from 91% to 96%, that's at minimum $100K in avoided penalties, plus the goodwill to renew those contracts. So the total value case is probably $2M+ annually when you add fuel savings, penalty avoidance, and driver retention.

@@ -1,0 +1,23 @@
+{
+  "skill_name": "project-brief",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Here's an interview transcript from a discovery session with a restaurant chain client. They're struggling with inventory management across 23 locations. Please generate a project brief from this. The file is at evals/interview-restaurant-chain.txt",
+      "expected_output": "A .docx project brief following the 11-section structure, covering FreshBite's inventory management challenges, their two user types (location managers and culinary director), the AI-powered ordering system concept, risks around data accuracy and supplier integration, and a ~$150K-$200K budget with September pilot target",
+      "files": ["evals/interview-restaurant-chain.txt"]
+    },
+    {
+      "id": 1,
+      "prompt": "I have two interview transcripts from a physiotherapy clinic project — one with the clinic owner and one with a senior physiotherapist. Please create a project brief from these interviews. Files are at evals/interview-physio-clinic.txt",
+      "expected_output": "A .docx project brief synthesizing both interviews into a cohesive brief. Should identify three user types (clinic owner, therapists, patients), the progress tracking system concept with quick-logging and dashboards, privacy/compliance risks for Australian health data, and Cliniko integration requirements. Budget $50K-$80K, pilot within 3 months.",
+      "files": ["evals/interview-physio-clinic.txt"]
+    },
+    {
+      "id": 2,
+      "prompt": "We just finished a discovery session with a logistics company. Three stakeholders were interviewed — VP Ops, dispatch manager, and a senior driver. Turn this into a project brief. Transcript is at evals/interview-logistics-company.txt",
+      "expected_output": "A .docx project brief covering SwiftHaul's fleet routing challenges across 180 trucks, three user types (operations/dispatch, dispatchers, drivers), the phased approach (static routing → dynamic → analytics), risks around driver adoption and system reliability, and $200K-$300K budget with 3-phase timeline.",
+      "files": ["evals/interview-logistics-company.txt"]
+    }
+  ]
+}

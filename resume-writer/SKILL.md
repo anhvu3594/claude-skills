@@ -1,11 +1,12 @@
 ---
 name: resume-writer
 description: >
-  Write, improve, or tailor professional tech resumes using proven frameworks from industry hiring managers and recruiters.
-  Use this skill whenever the user wants to: write a resume from scratch, rewrite or improve an existing resume, tailor a
-  resume for a specific job posting, review a resume for weaknesses, or get feedback on resume content. Also trigger when
-  users mention CV, curriculum vitae, job applications, or career documents for tech/software roles. Even if the user just
-  says "help with my resume" or "I'm applying for a job", this skill applies.
+  Write, improve, or tailor professional tech resumes and generate them as polished PDF files using proven frameworks from
+  industry hiring managers and recruiters. Use this skill whenever the user wants to: write a resume from scratch, rewrite
+  or improve an existing resume, tailor a resume for a specific job posting, review a resume for weaknesses, get feedback
+  on resume content, or generate a resume PDF. Also trigger when users mention CV, curriculum vitae, job applications, or
+  career documents for tech/software roles. Even if the user just says "help with my resume" or "I'm applying for a job",
+  this skill applies.
 ---
 
 # Resume Writer
@@ -193,7 +194,38 @@ If any answer is "no," restructure until all five pass.
 
 ## Output Format
 
-When writing a resume, produce it in clean Markdown that can be easily converted to PDF. Use this structure:
+### Preferred: PDF Generation (requires `document-skills:pdf` skill)
+
+Check if the `document-skills:pdf` skill is available in the current environment. If it is **not** installed, ask the user:
+
+> "I can generate a polished PDF resume if you install the `document-skills:pdf` skill. Would you like to install it? Otherwise I'll create a clean Markdown file instead."
+
+If the user wants to install it, guide them through installation. If they decline, skip to the **Fallback** section below.
+
+#### When `document-skills:pdf` is available
+
+The final deliverable is a **PDF file**, named `Firstname_Lastname_Resume.pdf`.
+
+1. First, compose the full resume content following the structure and guidelines above.
+2. Then invoke the `document-skills:pdf` skill to create the actual PDF file.
+3. When writing the PDF generation script with `reportlab`, follow these resume-specific design rules:
+
+**PDF Design Rules for Resumes** — based on how recruiters actually scan resumes in their first 10-15 seconds:
+
+- **Top-down, single-column layout** — mirrors LinkedIn's format. Never use two-column layouts.
+- **Important information first** — location, years of experience, key technologies, and job titles must be visible within seconds.
+- **Strategic bolding** — bold only section headers, job titles, company names, and dates. Never bold random words mid-sentence.
+- **Single accent color** — use one muted accent color (e.g., a blue or teal) for section headers only. Body text stays black. Links should match body text color with underline — not bright blue.
+- **Clean sans-serif typography** — use a professional font (e.g., Helvetica). Consistent font sizes, spacing, and alignment throughout. Don't cram content with tiny fonts — readability beats fitting on one page.
+- **Generous but not wasteful whitespace** — sections need breathing room, but don't use oversized margins.
+- **Use `KeepTogether`** for each work experience block so a position's title, dates, and bullets don't split across pages.
+- **Page length**: 1 page for new grads, 2 pages standard, 3 max for director-level. Let content determine page count naturally.
+- **File naming**: always `Firstname_Lastname_Resume.pdf` using the user's actual name.
+- **Run the script** after writing it to verify the PDF looks correct before delivering to the user.
+
+### Fallback: Markdown File
+
+If the `document-skills:pdf` skill is not available and the user declines to install it, produce the resume as a clean Markdown file named `Firstname_Lastname_Resume.md`. Use this structure:
 
 ```markdown
 # [Full Name]
@@ -203,9 +235,9 @@ When writing a resume, produce it in clean Markdown that can be easily converted
 [Only if applicable per guidelines above]
 
 ## Technical Skills
-[Languages]: ...
-[Frameworks]: ...
-[Infrastructure]: ...
+**Languages:** ...
+**Frameworks:** ...
+**Infrastructure:** ...
 
 ## Experience
 

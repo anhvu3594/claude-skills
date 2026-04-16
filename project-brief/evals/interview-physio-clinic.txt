@@ -1,0 +1,107 @@
+INTERVIEW TRANSCRIPT — Discovery Session 1 of 2
+Project: Physiotherapy Patient Progress Tracker
+Date: February 2026
+Participants: Dr. Sarah Okonkwo (Clinic Owner, MoveBetter Physiotherapy), Interviewer
+
+---
+
+INTERVIEWER: Sarah, tell me about your practice and what brought you to us.
+
+SARAH: MoveBetter is a mid-size physio clinic in Melbourne. We have 8 physiotherapists, 2 exercise physiologists, and about 1,200 active patients at any given time. We've been open for 6 years and we're one of the busier clinics in the eastern suburbs.
+
+The thing that brought me here is... honestly, frustration. I feel like we're flying blind with patient progress. We do great clinical work — my team is excellent — but we have almost no way to systematically track whether our patients are actually getting better, and if so, why.
+
+INTERVIEWER: What does tracking look like today?
+
+SARAH: So right now, each therapist writes session notes in our practice management system — it's called Cliniko. The notes are free-text. Some therapists are detailed, some are not. At the end of a treatment plan — usually 6 to 12 sessions — we do a reassessment. That's when we formally measure: range of motion, pain scores, functional tests. But between the initial assessment and that reassessment, we're basically going on feel.
+
+I'll ask a therapist, "How's Mr. Johnson progressing?" and they'll say, "Yeah, he seems to be doing well, his pain's down." But "seems" isn't data. I can't use "seems" to figure out if our ACL rehab protocol is actually outperforming our old one. I can't use "seems" to show a referring doctor that our outcomes are better than the clinic down the road.
+
+INTERVIEWER: What impact does this have on the business?
+
+SARAH: Multiple levels. First, patient retention. If a patient doesn't feel like they're making progress, they stop coming. And often they ARE making progress — it's just not visible to them. We lose maybe 20% of patients between session 4 and session 8 because they think "it's not working." If we could show them a clear progress graph, I genuinely believe we'd retain most of those people.
+
+Second, referral relationships. GPs and surgeons refer to us, and they want outcome data. "What's your average return-to-sport timeline for ACL rehab?" I should be able to answer that instantly. Instead, I'd have to manually pull 50 patient files and calculate it myself. I've just... never done it. It's too time-consuming.
+
+Third, internal quality. I have 8 therapists and they all have slightly different approaches. I have no way to know whose approach is getting better results for which conditions. What if one therapist's shoulder protocol gets patients better 2 weeks faster? I'd never know. That's institutional knowledge we're losing.
+
+INTERVIEWER: Walk me through a typical patient journey — how does it work from first visit to discharge?
+
+SARAH: Patient comes in, usually with a referral from their GP or self-referred. First session is the initial assessment: we take a full history, do a physical exam, measure baselines — range of motion with a goniometer, pain on a 0-10 scale, specific functional tests depending on the condition. For a knee, that might be single-leg squat depth, hop distance, that kind of thing.
+
+Then we write a treatment plan. Typically 2 sessions per week for 6 weeks, so 12 sessions. Each session, the therapist does hands-on treatment and prescribes exercises. The patient is supposed to do exercises at home between sessions.
+
+Here's the problem: those home exercises are where most of the recovery happens. And we have almost no visibility into whether patients are doing them. We give them a printed sheet or a link to an exercise video library, and then we ask next session, "Did you do your exercises?" and they say "Yeah, mostly." Which could mean anything.
+
+At session 6 or 12, we do a formal reassessment — repeat the baseline measurements. That's when we actually know if they've improved. But it's too late to course-correct if something isn't working. We need to know at session 3 or 4.
+
+INTERVIEWER: If you could build the ideal system, what would it do?
+
+SARAH: Okay. So at the initial assessment, the therapist records all the baseline measurements in a structured format — not free text, but actual data fields. Pain score: 7. Knee flexion: 95 degrees. Single-leg squat: can't do it. Whatever the relevant measures are for that condition.
+
+Then at EVERY session — not just the reassessment — the therapist quickly logs a few key metrics. It should take less than 60 seconds. The system suggests which metrics to track based on the condition. For a knee patient, it automatically knows to ask about pain, flexion range, and functional capacity.
+
+On the patient side, they have an app — or even just a simple web link, they don't need to download anything — where they log their home exercises. Did they do them? How did it feel? Any pain? And the system can push them reminders and encouragement. "You're 40% through your treatment plan and your pain has dropped from 7 to 4 — great progress!"
+
+On my side — the clinic owner and lead therapist — I want a dashboard. I want to see: across all patients, what's our average outcome improvement for each condition? Which therapists have the best outcomes? Where are patients dropping off? Which treatment protocols are working and which need revision?
+
+And for the therapists, they need to see their patient's progress at a glance before each session. A simple chart: here's where they started, here's where they are now, here's the trajectory. Are they ahead or behind the typical recovery curve for their condition?
+
+INTERVIEWER: What about the referring doctors?
+
+SARAH: Yes! That's a huge one. I want to be able to generate a progress report for the referring GP or surgeon with one click. "Dear Dr. Smith, your patient Jane Doe has completed 8 of 12 sessions. Pain reduced from 7/10 to 3/10. Knee flexion improved from 95° to 130° (normal is 135°). On track for full recovery by week 10." Auto-generated from the data. Right now that report takes a therapist 15-20 minutes to write manually, so honestly, most of the time we just don't send one.
+
+INTERVIEWER: What's the biggest risk you see?
+
+SARAH: Therapist adoption. Period. If logging the metrics adds friction to their session, they won't do it. They've got 30-minute appointments back to back, 8 hours a day. Every second counts. The data entry has to be FAST. Tapping a number on a phone screen, not typing paragraphs.
+
+The other thing is — we can't replace Cliniko. It's our practice management system, it does bookings, billing, everything. This needs to work alongside it, not compete with it. Ideally it pulls patient demographics and appointment data from Cliniko so we're not entering things twice.
+
+INTERVIEWER: Any sense of budget or timeline?
+
+SARAH: I'd want to pilot it with 3 of my therapists first — the ones who are keen and tech-comfortable. Run it for maybe 8 weeks with their patients. If the data looks good and they don't hate using it, we roll out to the full team. Budget-wise, I've set aside about $50K to $80K for the build. I'd want the pilot running within 3 months.
+
+INTERVIEWER: Anything else?
+
+SARAH: Privacy is a big deal. Health data in Australia is governed by the Privacy Act and the Australian Privacy Principles. Patient data needs to stay in Australia, full encryption, and we need proper consent flows. Patients need to be able to opt out of the tracking at any time without it affecting their care. This isn't negotiable.
+
+---
+
+INTERVIEW TRANSCRIPT — Discovery Session 2 of 2
+Project: Physiotherapy Patient Progress Tracker
+Date: February 2026
+Participants: James Liu (Senior Physiotherapist, MoveBetter), Interviewer
+
+---
+
+INTERVIEWER: James, Sarah mentioned you'd be one of the pilot therapists. Can you walk me through your day and where you see the pain points?
+
+JAMES: Sure. I see about 14 to 16 patients a day, 30-minute appointments. Between patients I've got maybe 2 minutes to write notes and prep for the next one. So time is the absolute constraint.
+
+Right now, when a patient walks in, I open Cliniko and read my notes from last time. The notes are basically paragraphs — "Patient reports reduced pain, improved walking tolerance, performed exercises 3x this week." But I don't have quick access to the numbers. I have to scroll back through multiple session notes to remember: "What was their pain score three sessions ago? Has the range of motion actually changed or does it just feel like it?"
+
+I end up relying on my memory. Which is fine for my regulars, but I've got maybe 80 active patients. For the ones I see once a week instead of twice, I genuinely forget where we were.
+
+INTERVIEWER: How do you decide if a treatment is working?
+
+JAMES: Honestly, vibes. That sounds bad, but it's true for most of us. You feel like the tissue quality is improving under your hands. The patient says they feel better. But I've had cases where a patient says they feel the same, and then you remeasure and they've actually improved 20 degrees of motion. And the reverse — patient says they're heaps better, but objectively the measurements haven't changed, which might mean the pain medication is masking the real picture.
+
+If I had the data in front of me — a graph showing session-over-session improvement — I'd make better clinical decisions. "Your pain is down but your strength hasn't improved. Let's shift the focus to strengthening." That's a conversation I'd love to have with data behind it.
+
+INTERVIEWER: What about the exercise prescription side?
+
+JAMES: We use an app called Physitrack to prescribe exercises. It's decent — has video demonstrations, patients can tick off that they've done them. But it doesn't talk to anything else. The data just sits in Physitrack. I don't see it in the context of their overall progress.
+
+What would be great is if I could see: "This patient did their exercises 5 out of 7 days, and their pain dropped 1 point this week. This other patient did their exercises 2 out of 7 days, and their pain is the same." That correlation would help me prioritize who needs a check-in call and who's on track.
+
+INTERVIEWER: What would make you actually use a new system?
+
+JAMES: One tap to log. Seriously. If I can look at a patient, tap "pain: 4" and "flexion: 120" on my phone between patients, I'll do it. If I have to open a laptop, navigate to a page, find the patient, click through three screens, fill out a form — I won't do it after week one.
+
+And don't make me log things that don't matter. For an ankle sprain, I don't need to track shoulder metrics. The system should know the condition and show me only the relevant fields.
+
+INTERVIEWER: Any other thoughts?
+
+JAMES: The comparison thing Sarah mentioned — comparing across therapists. I actually want that. I want to know if my colleague's approach to frozen shoulder is getting faster results than mine. Not in a competitive way, but we should be learning from each other. Right now we occasionally chat about techniques over coffee, but there's no data. It's all anecdotes.
+
+Also, patient-facing progress visualization is huge. When I show a patient their improvement on paper — even just sketching a line graph — their eyes light up. They had no idea they'd improved that much. It changes their motivation completely. If the system did that automatically, it would transform compliance with home exercises.
