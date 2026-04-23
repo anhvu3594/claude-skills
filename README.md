@@ -28,6 +28,17 @@ Transforms raw client interview transcripts into polished, comprehensive project
 - **Gap tracking** — marks missing information as `[TO BE CONFIRMED]` rather than fabricating details
 - **docx output** — generates a formatted Word document via `document-skills:docx`
 
+### [tech-proposal](./tech-proposal/)
+
+Creates professional technical proposals for software projects — client-ready documents covering architecture, cost modeling, feature estimation, and approach comparison.
+
+- **5-phase workflow** — Brainstorm → Decide → Draft → Cost & Feature Pricing → Deliver
+- **Honest approach comparison** — presents multiple architecture options with pros/cons rather than pitching one solution
+- **Detailed cost modeling** — shows variable vs fixed costs across 3 usage volumes, with full token/message math
+- **5-dimension feature scoring** — scores each feature on Tech Complexity, Size, Dependencies, Uncertainty, and Risk to produce a credible per-feature price breakdown
+- **Template assets** — includes a polished `.docx` proposal template and a `.xlsx` feature cost estimator spreadsheet
+- **Client-friendly writing** — describes components by what they do, not by tool names or jargon
+
 ### [scrape-course](./scrape-course/)
 
 Scrapes an entire ByteByteGo course (or similar Next.js platforms) to sequentially numbered PDFs, ready to upload to NotebookLLM.
