@@ -28,12 +28,12 @@ Transforms raw client interview transcripts into polished, comprehensive project
 - **Gap tracking** — marks missing information as `[TO BE CONFIRMED]` rather than fabricating details
 - **docx output** — generates a formatted Word document via `document-skills:docx`
 
-### [bytebytego-scraper](./bytebytego-scraper/)
+### [scrape-course](./scrape-course/)
 
-Saves ByteByteGo course lesson pages to self-contained local HTML files that look identical to the original.
+Scrapes an entire ByteByteGo course (or similar Next.js platforms) to sequentially numbered PDFs, ready to upload to NotebookLLM.
 
-- **Fully offline** — inlines all CSS so files work without an internet connection
-- **Interactive code tabs** — replicates antd tab-switching behavior with vanilla JS
-- **Image support** — uses `<base href>` so images load from bytebytego.com without downloading
-- **Cookie injection** — handles login walls when the MCP runs a separate browser instance
-- **Copy buttons** — clipboard functionality preserved in the saved file
+- **Full course extraction** — parses `__NEXT_DATA__` directly to get a perfectly ordered lesson list, no sidebar gymnastics
+- **Image reliability** — removes lazy-load attributes and waits for all images to download before rendering
+- **JavaScript tab filtering** — auto-clicks JS code tabs on each page
+- **Resume support** — skips already-exported PDFs by default; targeted overwrite for specific lessons
+- **Puppeteer-based** — connects to the user's existing Chrome session to bypass login walls
