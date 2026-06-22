@@ -24,7 +24,8 @@ Run through this checklist before finalizing any resume. Each item is a real mis
 - [ ] **Internal jargon and acronyms** — Replace project codenames and company-specific acronyms with descriptions anyone can understand.
 - [ ] **Clichés instead of evidence** — "Team player," "fast learner," "hit the ground running" — replace with specific examples that demonstrate these qualities.
 - [ ] **"etc." or "and so on"** — Be specific or cut it. Sloppy phrasing suggests sloppy thinking.
-- [ ] **Too verbose** — Ruthlessly edit. If a bullet is more than 2 lines, split or trim it.
+- [ ] **Too verbose** — Ruthlessly edit. If a bullet is more than 2 lines, split or trim it. Run it through the free Hemingway Editor to catch long, hard-to-read sentences.
+- [ ] **Typos / grammar** — Spell check plus the free Grammarly and Hemingway Editor, then a human proofread. Typos read as "doesn't pay attention to detail."
 - [ ] **Not tailored for the job** — A generic resume loses to a tailored one every time. Mirror the job description's language.
 
 ## Unnecessary Details

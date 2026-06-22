@@ -1,0 +1,51 @@
+{
+  "name": "Edmond Smith",
+  "contact": [
+    "Cape Town, South Africa",
+    "edmondsmith88@example.com",
+    "github.com/edmondsmith"
+  ],
+  "summary": null,
+  "technologies": [
+    "PHP, JavaScript, Java, Kotlin, Android, Angular, Laravel, Express.js, Ktor",
+    "MySQL, MongoDB, AWS, Git",
+    "Data structures and algorithms, API design, engineering best practices, unit testing"
+  ],
+  "experience": [
+    {
+      "title": "Backend Software Engineer",
+      "company": "Cloudless",
+      "date": "Sep 2018 – Present",
+      "location": "Remote",
+      "bullets": [
+        "Improved customer conversion by 30% on the co-working platform by implementing recurring payments and integrating Zoom rooms.",
+        "Re-architected the RESTful API powering the mobile client, using PHP and Laravel."
+      ]
+    },
+    {
+      "title": "Development Team Lead",
+      "company": "MennoMark",
+      "date": "Jan 2017 – Aug 2018",
+      "bullets": [
+        "Led a team of 3 engineers to ship multiple apps and services.",
+        "Built an app for educating cocoa farmers in the Farmer Business School programme, using Kotlin and Room database.",
+        "Designed and implemented APIs that powered our 10 mobile applications using PHP, Lumen, Laravel, AWS RDS, AWS Elasticbeanstalk and PostMan.",
+        "Onboarded and trained 6 new employees on the company's development and product stack."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Cape Town University",
+      "date": "2013 – 2017",
+      "lines": [
+        "Bachelor of Science in Computer Science",
+        "MasterCard Foundation Scholar — awarded to 10 of 300 applicants."
+      ]
+    }
+  ],
+  "projects": [
+    "<b>BareGo</b> — a minimal, progressive Go framework for efficient, scalable server-side apps. <u>github.com/edmondsmith/barego</u>",
+    "<b>Technical blogging</b> on Dev.to; popular articles on <u>Angular Material</u> and <u>Clean Code</u>."
+  ]
+}

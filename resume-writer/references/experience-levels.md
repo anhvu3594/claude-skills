@@ -150,10 +150,12 @@ With 8+ years, you have more experience than fits on 2 pages. The challenge is r
 2. **Add a tailored summary** — customize for each position; what would the company get with you?
 3. **Highlight "soft" achievements** — mentoring juniors, leading teams, cross-team influence
 4. **Discuss influence, not just impact** — what teams or organizations did you influence? Staff-level engineers are expected to influence multiple teams
-5. **Move education to page 2** — reduces age bias; hiring manager decides on qualification before seeing graduation date
-6. **Minimize education details** — school, degree, date only; keep summa cum laude, drop everything else
-7. **Compress earlier work** — further in the past = less space
-8. **Consider direct outreach** — message recruiters and hiring managers on LinkedIn; senior candidates get responses
+5. **Read as a Solver or Finder, not an Implementer** — junior engineers implement well-defined tasks; senior engineers solve ambiguous problems (Solver) or identify which problems are worth solving at all (Finder). Frame bullets around the problem you found/scoped and the solution you drove, not just the code you wrote. "Implemented feature X" is an Implementer bullet; "Identified that node remediation toil was the top reliability risk and led the auto-remediation effort that raised uptime 90%→95%" is a Finder bullet.
+6. **Mention notable learnings** — why/how you picked up a key skill and what you achieved with it. A strong signal hiring managers rarely see; especially fitting for seniors who proactively expand scope.
+7. **Move education to page 2** — reduces age bias; hiring manager decides on qualification before seeing graduation date
+8. **Minimize education details** — school, degree, date only; keep summa cum laude, drop everything else
+9. **Compress earlier work** — further in the past = less space
+10. **Consider direct outreach** — message recruiters and hiring managers on LinkedIn; senior candidates get responses
 
 ### Length
 - 2 pages is the guideline, not a hard rule
